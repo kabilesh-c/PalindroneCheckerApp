@@ -1,83 +1,29 @@
-# Palindrome Checker – Algorithm & OOPS Evolution
-
-## 📌 Project Overview
-This project demonstrates palindrome validation using multiple data structures and algorithmic techniques.
-
-Later versions introduce object-oriented design principles.
+## 🚀 Current Version: 12.0
 
 ---
 
-## 🚀 Current Version: 11.0
+### UC12 – Strategy Pattern
 
----
+Goal:
+Choose palindrome algorithm dynamically at runtime.
 
-## 📚 Use Case Evolution
+Design:
+- Created PalindromeStrategy interface.
+- Implemented:
+    - StackStrategy
+    - DequeStrategy
+- Injected strategy into PalindromeChecker (Context class).
 
-### UC4 – Two Pointer Technique
-In-place character comparison.
-Time: O(n)
-Space: O(1)
+Concepts:
+- Interface
+- Polymorphism
+- Strategy Pattern
+- Runtime behavior selection
 
-### UC5 – Stack (LIFO)
-Reverse using stack.
-Time: O(n)
-Space: O(n)
+Data Structure:
+Varies depending on chosen strategy (Stack or Deque)
 
-### UC6 – Queue vs Stack
-FIFO vs LIFO comparison.
-Time: O(n)
-Space: O(n)
-
-### UC7 – Deque
-Double-ended comparison.
-Time: O(n)
-Space: O(n)
-
-### UC8 – Singly Linked List
-Fast & slow pointer + in-place reversal.
-Time: O(n)
-Space: O(1)
-
-### UC9 – Recursion
-Uses call stack.
-Time: O(n)
-Space: O(n)
-
-### UC10 – Ignore Spaces & Case
-String preprocessing using regex.
-Time: O(n)
-Space: O(n)
-
----
-
-### UC11 – Encapsulation (OOPS)
-- Created separate PalindromeChecker class.
-- Exposed public checkPalindrome() method.
-- Internal logic hidden using private methods.
-- Demonstrates:
-  - Encapsulation
-  - Single Responsibility Principle
-
-Improves maintainability and reusability.
-
----
-
-## ⚙️ How to Run
-
-1. Compile:
-   javac PalindromeCheckerApp.java PalindromeChecker.java
-
-2. Run:
-   java PalindromeCheckerApp
-
----
-
-## 🧠 Learning Outcome
-
-- Data structure comparison
-- Recursive vs iterative thinking
-- Pointer techniques
-- String preprocessing
-- Object-Oriented Design
-- Encapsulation
-- Clean architecture principles
+Benefits:
+- Open for extension, closed for modification.
+- Easy to add new algorithms.
+- Clean architecture.
