@@ -1,19 +1,3 @@
-/**
- *
- * =========================================================
- * MAIN CLASS - UseCase11PalindromeCheckerApp
- * =========================================================
- *
- * Use Case 11: Encapsulated Palindrome Checker
- *
- * Description:
- * Demonstrates encapsulation by delegating palindrome
- * logic to a dedicated class.
- *
- * @author Kabilesh C
- * @version 11.0
- */
-
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
@@ -21,23 +5,23 @@ public class PalindromeCheckerApp {
         String input = "A man a plan a canal Panama";
 
         System.out.println("=================================");
-        System.out.println("Palindrome Checker - UC11");
+        System.out.println("Palindrome Checker - UC12");
         System.out.println("=================================");
         System.out.println("Input: " + input);
         System.out.println();
 
-        // Create object of PalindromeChecker
-        PalindromeChecker checker = new PalindromeChecker();
+        // Choose strategy at runtime
+        PalindromeStrategy strategy = new StackStrategy();
+        // PalindromeStrategy strategy = new DequeStrategy();
 
-        boolean result = checker.checkPalindrome(input);
+        PalindromeChecker checker = new PalindromeChecker(strategy);
+
+        boolean result = checker.check(input);
 
         if (result) {
             System.out.println("Result: The string is a Palindrome.");
         } else {
             System.out.println("Result: The string is NOT a Palindrome.");
         }
-
-        System.out.println();
-        System.out.println("Program execution completed.");
     }
 }
