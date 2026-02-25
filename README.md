@@ -1,79 +1,71 @@
-# Palindrome Checker – Complete Algorithm Evolution
+# Palindrome Checker – Algorithm & OOPS Evolution
 
 ## 📌 Project Overview
 This project demonstrates palindrome validation using multiple data structures and algorithmic techniques.
 
-Each Use Case introduces a new computational or structural concept.
+Later versions introduce object-oriented design principles.
 
 ---
 
-## 🚀 Current Version: 10.0
+## 🚀 Current Version: 11.0
 
 ---
 
 ## 📚 Use Case Evolution
 
 ### UC4 – Two Pointer Technique
-- In-place character comparison.
-- Time: O(n)
-- Space: O(1)
-
----
+In-place character comparison.
+Time: O(n)
+Space: O(1)
 
 ### UC5 – Stack (LIFO)
-- Reverse using push() and pop().
-- Time: O(n)
-- Space: O(n)
-
----
+Reverse using stack.
+Time: O(n)
+Space: O(n)
 
 ### UC6 – Queue vs Stack
-- Demonstrates FIFO vs LIFO.
-- Time: O(n)
-- Space: O(n)
-
----
+FIFO vs LIFO comparison.
+Time: O(n)
+Space: O(n)
 
 ### UC7 – Deque
-- Double-ended comparison.
-- Time: O(n)
-- Space: O(n)
-
----
+Double-ended comparison.
+Time: O(n)
+Space: O(n)
 
 ### UC8 – Singly Linked List
-- Fast & slow pointer technique.
-- In-place reversal of second half.
-- Time: O(n)
-- Space: O(1)
-
----
+Fast & slow pointer + in-place reversal.
+Time: O(n)
+Space: O(1)
 
 ### UC9 – Recursion
-- Recursive start/end comparison.
-- Uses call stack.
-- Time: O(n)
-- Space: O(n)
+Uses call stack.
+Time: O(n)
+Space: O(n)
+
+### UC10 – Ignore Spaces & Case
+String preprocessing using regex.
+Time: O(n)
+Space: O(n)
 
 ---
 
-### UC10 – Ignore Spaces & Case
-- String preprocessing using regex.
-- Converts to lowercase.
-- Removes non-alphanumeric characters.
-- Applies two-pointer logic.
-- Time: O(n)
-- Space: O(n) (due to normalization)
+### UC11 – Encapsulation (OOPS)
+- Created separate PalindromeChecker class.
+- Exposed public checkPalindrome() method.
+- Internal logic hidden using private methods.
+- Demonstrates:
+  - Encapsulation
+  - Single Responsibility Principle
 
-Handles real-world inputs like:
-"A man a plan a canal Panama"
+Improves maintainability and reusability.
 
 ---
 
 ## ⚙️ How to Run
 
 1. Compile:
-   javac PalindromeCheckerApp.java
+   javac PalindromeCheckerApp.java PalindromeChecker.java
 
 2. Run:
    java PalindromeCheckerApp
@@ -82,9 +74,10 @@ Handles real-world inputs like:
 
 ## 🧠 Learning Outcome
 
-- Data structures comparison
-- Iterative vs recursive thinking
-- Pointer manipulation
+- Data structure comparison
+- Recursive vs iterative thinking
+- Pointer techniques
 - String preprocessing
-- Regular expressions
-- Space vs time trade-offs
+- Object-Oriented Design
+- Encapsulation
+- Clean architecture principles
