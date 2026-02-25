@@ -1,41 +1,41 @@
-# Palindrome Checker – Data Structures & Algorithm Evolution
+# Palindrome Checker – Complete Algorithm Evolution
 
 ## 📌 Project Overview
-This project demonstrates palindrome validation using different data structures and algorithmic techniques.
+This project demonstrates palindrome validation using multiple data structures and algorithmic techniques.
 
-Each Use Case introduces a new computational concept to deepen understanding of problem-solving approaches.
+Each Use Case introduces a new computational or structural concept.
 
 ---
 
-## 🚀 Current Version: 9.0
+## 🚀 Current Version: 10.0
 
 ---
 
 ## 📚 Use Case Evolution
 
 ### UC4 – Two Pointer Technique
-- Compare first and last characters inward.
+- In-place character comparison.
 - Time: O(n)
 - Space: O(1)
 
 ---
 
 ### UC5 – Stack (LIFO)
-- Reverse string using stack.
+- Reverse using push() and pop().
 - Time: O(n)
 - Space: O(n)
 
 ---
 
 ### UC6 – Queue vs Stack
-- Demonstrates FIFO vs LIFO behavior.
+- Demonstrates FIFO vs LIFO.
 - Time: O(n)
 - Space: O(n)
 
 ---
 
 ### UC7 – Deque
-- Double-ended access for direct comparison.
+- Double-ended comparison.
 - Time: O(n)
 - Space: O(n)
 
@@ -50,13 +50,23 @@ Each Use Case introduces a new computational concept to deepen understanding of 
 ---
 
 ### UC9 – Recursion
-- Recursive comparison of start and end characters.
-- Base condition prevents infinite recursion.
-- Uses call stack as underlying data structure.
+- Recursive start/end comparison.
+- Uses call stack.
 - Time: O(n)
-- Space: O(n) (due to call stack)
+- Space: O(n)
 
-Demonstrates divide-and-conquer thinking and stack memory behavior.
+---
+
+### UC10 – Ignore Spaces & Case
+- String preprocessing using regex.
+- Converts to lowercase.
+- Removes non-alphanumeric characters.
+- Applies two-pointer logic.
+- Time: O(n)
+- Space: O(n) (due to normalization)
+
+Handles real-world inputs like:
+"A man a plan a canal Panama"
 
 ---
 
@@ -72,8 +82,9 @@ Demonstrates divide-and-conquer thinking and stack memory behavior.
 
 ## 🧠 Learning Outcome
 
-- Iterative vs Recursive approaches
-- Call stack behavior
-- Base condition importance
-- Space complexity analysis
-- Structural comparison of data handling methods
+- Data structures comparison
+- Iterative vs recursive thinking
+- Pointer manipulation
+- String preprocessing
+- Regular expressions
+- Space vs time trade-offs
